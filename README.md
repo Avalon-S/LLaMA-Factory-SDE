@@ -2,7 +2,10 @@
 This repository is about fine-tuning LLaMA 3.2-3B, 1B models in the SDE project. The dataset is [PubMedQA](https://huggingface.co/datasets/qiaojin/PubMedQA), I use the pqa_unlabeled subset (61.2k rows).
 
 ## Live Demo
-[Colab](https://colab.research.google.com/drive/1oQZRVqmxLZmd36pSVwJg_c2wVRchFZMo?usp=sharing) Use free T4 GPU.
+[Colab](https://colab.research.google.com/drive/1oQZRVqmxLZmd36pSVwJg_c2wVRchFZMo?usp=sharing) 
+
+Use free T4 GPU.
+
 Thanks to 4-bit quantization, running LLaMA-3B requires only about 2.5 GB of GPU memory, and running LLaMA-3B requires only about 1.3 GB of GPU memory. Therefore, if your GPU memory is at least 4 GB, these models can run on your computer.
 
 ## Fine-tuning models weights
@@ -20,6 +23,7 @@ If you encounter library dependency and version issues, please refer to the [ins
 ## Usage
 Fine-tune first, then merge LoRA weights. 
 The first code file will generate a folder containing Lora weights, which need to be merged into the original LLaMA model during inference.
+
 The second code file will merge the two into a new model. At this time, you can directly load the new model to complete the inference.
 ### Fine-tune LLaMA 3.2-3B on PubMedQA dataset
 ```
@@ -38,4 +42,6 @@ python test_merged.py
 ```
 
 ## Acknowledgements
-This repository is a fork of the [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) project, licensed under the [Apache-2.0 License](https://www.apache.org/licenses/LICENSE-2.0). We greatly appreciate the original authors' efforts and contributions, which laid the foundation for this work. 
+This repository is a fork of the [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) project, licensed under the [Apache-2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
+
+We greatly appreciate the original authors' efforts and contributions, which laid the foundation for this work. 
