@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import json
 from dataclasses import dataclass
 from typing import TYPE_CHECKING, Dict, List, Optional, Sequence, Tuple, Union
 
@@ -110,7 +111,11 @@ class Template:
                 elements += self.format_prefix.apply()
                 if system or tools:
                     tool_text = self.format_tools.apply(content=tools)[0] if tools else ""
-                    elements += self.format_system.apply(content=(system + tool_text))
+                    # convert system to string
+                    system_text = (
+                        json.dumps(system) if isinstance(system, dict) else system
+                    )
+                    elements += self.format_system.apply(content=(system_text + tool_text))
 
             if i > 0 and i % 2 == 0:
                 elements += self.format_separator.apply()

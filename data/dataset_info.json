@@ -1,4 +1,14 @@
 {
+
+  "pubmedqa": {
+  "hf_hub_url": "qiaojin/PubMedQA",
+  "subset": "pqa_unlabeled",
+  "columns": {
+    "prompt": "question",
+    "response": "long_answer",
+    "system": "context"
+  }
+  },
   "identity": {
     "file_name": "identity.json"
   },
