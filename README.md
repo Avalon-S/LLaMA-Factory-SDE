@@ -1,5 +1,5 @@
 ## Introduction
-This repository is about fine-tuning LLaMA 3.2-3B, 1B models in the SDE project. The dataset is [PubMedQA](https://huggingface.co/datasets/qiaojin/PubMedQA), I use the pqa_unlabeled subset (61.2k rows).
+This repository is about fine-tuning LLaMA 3.2-3B, 1B models in the SDE project(UNITN). The dataset is [PubMedQA](https://huggingface.co/datasets/qiaojin/PubMedQA), I use the pqa_unlabeled subset (61.2k rows).
 
 ## Live Demo
 [Colab](https://colab.research.google.com/drive/1oQZRVqmxLZmd36pSVwJg_c2wVRchFZMo?usp=sharing) 
