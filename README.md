@@ -30,7 +30,7 @@ The second code file will merge the two into a new model. At this time, you can 
 python ft_llama_3B.py
 python merge_3B.py
 ```
-### Fine-tune LLaMA 3.2-3B on PubMedQA dataset
+### Fine-tune LLaMA 3.2-1B on PubMedQA dataset
 ```
 python ft_llama_1B.py
 python merge_1B.py
