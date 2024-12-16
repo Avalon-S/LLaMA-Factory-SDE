@@ -6,7 +6,7 @@ This repository is about fine-tuning LLaMA 3.2-3B, 1B models in the SDE project(
 
 Use free T4 GPU.
 
-Thanks to 4-bit quantization, running LLaMA-3B requires only about 2.5 GB of GPU memory, and running LLaMA-3B requires only about 1.3 GB of GPU memory. Therefore, if your GPU memory is at least 4 GB, these models can run on your computer.
+Thanks to 4-bit quantization, running LLaMA-3B requires only about 2.5 GB of GPU memory, and running LLaMA-1B requires only about 1.3 GB of GPU memory. Therefore, if your GPU memory is at least 4 GB, these models can run on your computer.
 
 ## Fine-tuning models weights
 [LLaMA 3.2-3B](https://huggingface.co/Avalon-S/llama3_3B_pubmedqa_sde)
