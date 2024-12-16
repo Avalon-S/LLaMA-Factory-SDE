@@ -44,4 +44,4 @@ python test_merged.py
 ## Acknowledgements
 This repository is a fork of the [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) project, licensed under the [Apache-2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
 
-We greatly appreciate the original authors' efforts and contributions, which laid the foundation for this work. 
+I greatly appreciate the original authors' efforts and contributions, which laid the foundation for this work. 
